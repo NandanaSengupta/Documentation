@@ -1,0 +1,181 @@
+# Questions#
+#
+# multiple attempts on the same question#
+# doing analysis only on some common set of questions (how to pick these)#
+#
+setwd('/Users/Nandana/Dropbox/0_Research/Own/gender')#
+rm(list = ls())#
+data = read.csv("test_and_demo.csv", header = TRUE)[, -1]#
+#
+# recode selfeval #
+#
+selfeval = data[, which(names(data)== "self_eval") ] #
+selfevalnum= rep(0, length(selfeval))#
+selfevalnum[selfeval == "close"] = 1#
+selfevalnum[selfeval == "correct"] = 2#
+selfevalnum[is.na(selfeval)] = NA#
+data[, which(names(data) == "self_eval")] = selfevalnum#
+#
+# make male and female subsets#
+gender = as.character(data[, which(names(data) == "Gender")])#
+male_data = data[ which(gender == "M"), ]#
+female_data = data[ which(gender == "F"), ]#
+#
+# stack by unique student id#
+f_byID = female_data[order(female_data[,which(names(data) == "deID")]),]#
+m_byID = male_data[order(male_data[,which(names(data) == "deID")]),]#
+#
+# sort each students responses by submit time#
+f_sort = female_data[order(female_data[,which(names(data) == "deID")], female_data[,which(names(data) == "submit_time")]),]#
+m_sort = male_data[order(male_data[,which(names(data) == "deID")], male_data[,which(names(data) == "submit_time")]),]#
+#
+# remove students whose submit times aren't recorded#
+f_sort = f_sort[ - which(is.na(f_sort[, which(names(data) == "submit_time")])),]#
+m_sort = m_sort[ - which(is.na(m_sort[, which(names(data) == "submit_time")])),]#
+#
+nf = length(unique(f_sort[,which(names(data) == "deID")]))#
+nm = length(unique(m_sort[,which(names(data) == "deID")]))#
+#
+# no of questions answered #
+#
+fID = unique(f_sort[, which(names(data) == "deID")])#
+mID = unique(m_sort[, which(names(data) == "deID")])#
+#
+nques_f = numeric()#
+nattempts_f = numeric()#
+for ( i in 1: nf){#
+	nques_f =  c(nques_f, length(unique(f_sort[which(f_sort[ , 4] == fID[i]), 1])))#
+#
+	nattempts_f =  c(nattempts_f, length(f_sort[which(f_sort[ , 4] == fID[i]), 1]))	}#
+#
+nques_m = numeric()#
+nattempts_m = numeric()#
+#
+for ( i in 1: nm){#
+	nques_m =  c(nques_m, length(unique(m_sort[which(m_sort[ , 4] == mID[i]), 1])))#
+#
+	nattempts_m =  c(nattempts_m, length(m_sort[which(m_sort[ , 4] == mID[i]), 1]))	}#
+# trajectories of students confidence and self eval over time #
+# male average confidence and average self eval over time #
+#
+f_nresp = table(f_sort[,which(names(data) == "deID")])#
+count = 0#
+f_evol = matrix(NA, nf, max(f_nresp))#
+dim(f_evol)#
+for (i in 1: nf){#
+	i #
+	f_evol[i,(1: f_nresp[i] ) ] = cumsum(f_sort[ (count+1): (count+ f_nresp[i])  , which(names(f_sort)=="confidence")])/seq(1, f_nresp[i])#
+	count = count + f_nresp[i]#
+}#
+m_nresp = table(m_sort[,which(names(data) == "deID")])#
+count = 0#
+m_evol = matrix(NA, nm, max(m_nresp))#
+dim(m_evol)#
+for (i in 1: nm){#
+	i #
+	m_evol[i,(1: m_nresp[i])  ]= cumsum(m_sort[ (count+1): (count+ m_nresp[i])  , which(names(m_sort)=="confidence")])/seq(1, m_nresp[i])#
+#
+	count = count + m_nresp[i]#
+}#
+# mean self eval for male and female students#
+count = 0#
+f_mean_eval = numeric()#
+for ( i in 1: nf){#
+#
+	i #
+	f_mean_eval[i] = mean(f_sort[ (count+1): (count+ f_nresp[i])  , which(names(f_sort)=="self_eval")], na.rm = TRUE)#
+	count = count + f_nresp[i]	#
+}#
+count = 0#
+m_mean_eval = numeric()#
+for ( i in 1: nm){#
+#
+	i #
+	m_mean_eval[i] = mean(m_sort[ (count+1): (count+ m_nresp[i])  , which(names(m_sort)=="self_eval")], na.rm = TRUE)#
+	count = count + m_nresp[i]	#
+}#
+setwd('/Users/Nandana/Desktop/GitHub folder/Documentation/Confidence')#
+#
+#pdf(file = "trajectories1.pdf")#
+#
+# plotting trajectories for given i #
+#
+par(mfrow = c(4,2))#
+plot(f_evol[1, 1:f_nresp[1]], xlab = "Question Index", ylab = "Mean Confidence")#
+plot(m_evol[1, 1:m_nresp[1]], xlab = "Question Index", ylab = "Mean Confidence")#
+#
+plot(f_evol[2, 1:f_nresp[2]], xlab = "Question Index", ylab = "Mean Confidence")#
+plot(m_evol[2, 1:m_nresp[2]], xlab = "Question Index", ylab = "Mean Confidence")#
+plot(f_evol[3, 1:f_nresp[3]], xlab = "Question Index", ylab = "Mean Confidence")#
+plot(m_evol[3, 1:m_nresp[3]], xlab = "Question Index", ylab = "Mean Confidence")#
+#
+plot(f_evol[4, 1:f_nresp[4]], xlab = "Question Index", ylab = "Mean Confidence")#
+plot(m_evol[4, 1:m_nresp[4]], xlab = "Question Index", ylab = "Mean Confidence")#
+#dev.off()#
+############# FEMALES WITH LOWEST AND HIGHEST SELFEVAL #####################
+N = 20#
+#
+a = sort(f_mean_eval[which(f_nresp>N)])[1:5]#
+b = sort(m_mean_eval[which(m_nresp>N)])[1:5]#
+#
+c = -sort(-f_mean_eval[which(f_nresp>N)])[1:5]#
+d = -sort(-m_mean_eval[which(m_nresp>N)])[1:5]#
+e = round(cbind(a, b, c, d),2)#
+colnames(e) = c("Male", "Female", "Male", "Female" )#
+xtable(e)#
+f_eval_sort = sort(f_mean_eval[which(f_nresp>N)], index = TRUE)$ix#
+f_low = f_eval_sort[1:3]#
+f_high = f_eval_sort[ (length(f_eval_sort)-2):length(f_eval_sort)]#
+f_evol1 = f_evol[which(f_nresp>N), ]#
+f_nresp1 = f_nresp[which(f_nresp>N)]#
+i = 1#
+# plotting trajectories for given i #
+#
+quartz()#
+par(mfrow = c(3,2))#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+#
+i = 2#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+i = 3#
+#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+#
+############# MALES WITH LOWEST AND HIGHEST SELFEVAL #####################
+#
+quartz()#
+m_eval_sort = sort(m_mean_eval[which(m_nresp>N)], index = TRUE)$ix#
+m_low = m_eval_sort[1:3]#
+m_high = m_eval_sort[ (length(m_eval_sort)-2):length(m_eval_sort)]#
+m_evol1 = m_evol[which(m_nresp>N), ]#
+m_nresp1 = m_nresp[which(m_nresp>N)]#
+#
+i = 1#
+# plotting trajectories for given i #
+par(mfrow = c(3,2))#
+plot(m_evol1[m_low[i], 1:m_nresp1[m_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Males")#
+plot(m_evol1[m_high[i], 1:m_nresp1[m_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Males")#
+#
+i = 2#
+plot(m_evol1[m_low[i], 1:m_nresp1[m_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2),  main = "Lowest Mean Self Eval: Males")#
+plot(m_evol1[m_high[i], 1:m_nresp1[m_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Males")#
+#
+i = 3#
+plot(m_evol1[m_low[i], 1:m_nresp1[m_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2) , main = "Lowest Mean Self Eval: Males")#
+plot(m_evol1[m_high[i], 1:m_nresp1[m_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2) , main = "Highest Mean Self Eval: Males")
+pdf(file = "trajectories2.pdf")#
+par(mfrow = c(3,2))#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+#
+i = 2#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+i = 3#
+#
+plot(f_evol1[f_low[i], 1:f_nresp1[f_low[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Lowest Mean Self Eval: Females")#
+plot(f_evol1[f_high[i], 1:f_nresp1[f_high[i]]], xlab = "Question Index", ylab = "Mean Confidence", ylim = c(0, 2), main = "Highest Mean Self Eval: Females")#
+dev.off()

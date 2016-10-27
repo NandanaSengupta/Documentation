@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  19 OCT 2015 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  7 MAR 2016 14:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -847,7 +847,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\beamer@shortdate' on input line 15.
 
-(./knockoff_intro.aux)
+No file knockoff_intro.aux.
 \openout1 = `knockoff_intro.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -864,7 +864,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1054,24 +1053,7 @@ thkerncmss.
 
 ] [3
 
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-]
-<lasso.png, id=307, 410.53375pt x 447.6725pt>
+] <lasso.png, id=42, 410.53375pt x 447.6725pt>
 File: lasso.png Graphic file (type png)
  <use lasso.png>
 Package pdftex.def Info: lasso.png used on input line 92.
@@ -1080,301 +1062,50 @@ Package pdftex.def Info: lasso.png used on input line 92.
 Overfull \vbox (7.48878pt too high) detected at line 92
  []
 
-[12
+[4
 
- <./lasso.png>]
-File: lasso.png Graphic file (type png)
- <use lasso.png>
-Package pdftex.def Info: lasso.png used on input line 92.
-(pdftex.def)             Requested size: 142.6949pt x 155.6016pt.
-
-Overfull \vbox (7.48878pt too high) detected at line 92
- []
-
-[13
-
-]
-File: lasso.png Graphic file (type png)
- <use lasso.png>
-Package pdftex.def Info: lasso.png used on input line 92.
-(pdftex.def)             Requested size: 142.6949pt x 155.6016pt.
-
-Overfull \vbox (7.48878pt too high) detected at line 92
- []
-
-[14
-
-]
-File: lasso.png Graphic file (type png)
- <use lasso.png>
-Package pdftex.def Info: lasso.png used on input line 92.
-(pdftex.def)             Requested size: 142.6949pt x 155.6016pt.
-
-Overfull \vbox (7.48878pt too high) detected at line 92
- []
-
-[15
-
-]
-File: lasso.png Graphic file (type png)
- <use lasso.png>
-Package pdftex.def Info: lasso.png used on input line 92.
-(pdftex.def)             Requested size: 142.6949pt x 155.6016pt.
-
-Overfull \vbox (7.48878pt too high) detected at line 92
- []
-
-[16
-
-]
-File: lasso.png Graphic file (type png)
- <use lasso.png>
-Package pdftex.def Info: lasso.png used on input line 92.
-(pdftex.def)             Requested size: 142.6949pt x 155.6016pt.
-
-Overfull \vbox (7.48878pt too high) detected at line 92
- []
-
-[17
-
-] <paths.png, id=464, 1128.215pt x 851.18pt>
+ <./lasso.png>] <paths.png, id=51, 1128.215pt x 851.18pt>
 File: paths.png Graphic file (type png)
  <use paths.png>
 Package pdftex.def Info: paths.png used on input line 102.
 (pdftex.def)             Requested size: 230.46739pt x 173.8696pt.
- [18
 
- <./paths.png>] <errors.png, id=491, 1650.165pt x 750.805pt>
+[5
+
+ <./paths.png>] <errors.png, id=58, 1650.165pt x 750.805pt>
 File: errors.png Graphic file (type png)
  <use errors.png>
 Package pdftex.def Info: errors.png used on input line 118.
 (pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
 
-<fdr.png, id=492, 956.57375pt x 187.70125pt>
+<fdr.png, id=59, 956.57375pt x 187.70125pt>
 File: fdr.png Graphic file (type png)
  <use fdr.png>
 Package pdftex.def Info: fdr.png used on input line 118.
 (pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
- [19
+ [6
 
- <./errors.png> <./fdr.png>]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
- [20
-
-]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
-
-[21
-
-]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
- [22
-
-]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
-
-[23
-
-]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
- [24
-
-]
-File: errors.png Graphic file (type png)
- <use errors.png>
-Package pdftex.def Info: errors.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 104.85994pt.
-File: fdr.png Graphic file (type png)
- <use fdr.png>
-Package pdftex.def Info: fdr.png used on input line 118.
-(pdftex.def)             Requested size: 230.46739pt x 45.22105pt.
-
-[25
-
-] <auglas.png, id=674, 710.655pt x 143.53625pt>
+ <./errors.png> <./fdr.png>] <auglas.png, id=67, 710.655pt x 143.53625pt>
 File: auglas.png Graphic file (type png)
  <use auglas.png>
 Package pdftex.def Info: auglas.png used on input line 143.
 (pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
 
-<auglambda.png, id=675, 853.1875pt x 151.56625pt>
+<auglambda.png, id=68, 853.1875pt x 151.56625pt>
 File: auglambda.png Graphic file (type png)
  <use auglambda.png>
 Package pdftex.def Info: auglambda.png used on input line 143.
 (pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
 
-<auglambda1.png, id=676, 500.87125pt x 90.3375pt>
+<auglambda1.png, id=69, 500.87125pt x 90.3375pt>
 File: auglambda1.png Graphic file (type png)
  <use auglambda1.png>
 Package pdftex.def Info: auglambda1.png used on input line 143.
 (pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [26
+ [7
 
  <./auglas.png> <./auglambda.png> <./auglambda1.png>]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [27
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [28
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [29
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [30
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [31
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [32
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [33
-
-]
-File: auglas.png Graphic file (type png)
- <use auglas.png>
-Package pdftex.def Info: auglas.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 46.54797pt.
-File: auglambda.png Graphic file (type png)
-
-<use auglambda.png>
-Package pdftex.def Info: auglambda.png used on input line 143.
-(pdftex.def)             Requested size: 230.46739pt x 40.94193pt.
-File: auglambda1.png Graphic file (type png)
- <use auglambda1.png>
-Package pdftex.def Info: auglambda1.png used on input line 143.
-(pdftex.def)             Requested size: 138.2795pt x 24.94006pt.
- [34
-
-]
-<fdp.png, id=909, 2033.5975pt x 311.1625pt>
+<fdp.png, id=80, 2033.5975pt x 311.1625pt>
 File: fdp.png Graphic file (type png)
  <use fdp.png>
 Package pdftex.def Info: fdp.png used on input line 163.
@@ -1384,129 +1115,16 @@ Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
 []  
  []
 
-<fdp+.png, id=910, 853.1875pt x 250.9375pt>
+<fdp+.png, id=81, 853.1875pt x 250.9375pt>
 File: fdp+.png Graphic file (type png)
  <use fdp+.png>
 Package pdftex.def Info: fdp+.png used on input line 163.
 (pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [35
+ [8
 
- <./fdp.png> <./fdp+.png>]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [36
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [37
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [38
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [39
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [40
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [41
-
-]
-File: fdp.png Graphic file (type png)
- <use fdp.png>
-Package pdftex.def Info: fdp.png used on input line 163.
-(pdftex.def)             Requested size: 307.28987pt x 47.01895pt.
-
-Overfull \hbox (21.90005pt too wide) in paragraph at lines 163--163
-[]  
- []
-
-File: fdp+.png Graphic file (type png)
-<use fdp+.png>
-Package pdftex.def Info: fdp+.png used on input line 163.
-(pdftex.def)             Requested size: 107.55333pt x 31.6313pt.
- [42
-
-] <slambdafig.png, id=1116, 2366.8425pt x 1296.845pt>
+ <./fdp.png> <./fdp+.png>] <slambdafig.png, id=89, 2366.8425pt x 1296.845pt>
 File: slambdafig.png Graphic file (type png)
-
-<use slambdafig.png>
+ <use slambdafig.png>
 Package pdftex.def Info: slambdafig.png used on input line 171.
 (pdftex.def)             Requested size: 322.65529pt x 176.7881pt.
 
@@ -1514,58 +1132,13 @@ Overfull \hbox (15.36542pt too wide) in paragraph at lines 171--171
 [][]  
  []
 
-[43
+[9
 
- <./slambdafig.png>] [44
+ <./slambdafig.png>] [10
 
-] [45
+] [11
 
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
-
-] [51
-
-] [52
-
-] [53
-
-]
-[54
-
-] [55
-
-] [56
-
-] [57
-
-] [58
-
-] [59
-
-] [60
-
-] [61
-
-] [62
-
-] [63
-
-] [64
-
-] [65
-
-] [66
-
-] [67
-
-] [68
+] [12
 
 ]
 \tf@nav=\write6
@@ -1579,8 +1152,7 @@ Overfull \hbox (15.36542pt too wide) in paragraph at lines 171--171
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 241.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 241.
-
-(./knockoff_intro.aux)
+ (./knockoff_intro.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 241.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 241.
 Package rerunfilecheck Info: File `knockoff_intro.out' has not changed.
@@ -1595,13 +1167,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 241.
 (\end occurred when \ifx on line 15 was incomplete)
 (\end occurred when \unless\ifcsname on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 16882 strings out of 493089
- 322024 string characters out of 6134842
- 392567 words of memory out of 5000000
- 19830 multiletter control sequences out of 15000+600000
+ 16751 strings out of 493089
+ 320323 string characters out of 6134842
+ 391539 words of memory out of 5000000
+ 19813 multiletter control sequences out of 15000+600000
  15648 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,55p,394b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,11n,55p,394b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texl
 ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texli
 ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
@@ -1619,10 +1191,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on knockoff_intro.pdf (68 pages, 978298 bytes).
+Output written on knockoff_intro.pdf (12 pages, 841389 bytes).
 PDF statistics:
- 1861 PDF objects out of 2073 (max. 8388607)
- 1731 compressed objects within 18 object streams
- 137 named destinations out of 1000 (max. 500000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 25 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
